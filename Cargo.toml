@@ -1,10 +1,16 @@
 [package]
 name = "omnigraph"
-description = "A graph library for agent knowledge representation"
 version = "0.0.1"
 edition = "2021"
-license = "Apache-2.0"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT OR Apache-2.0"
+description = "A typed property-graph substrate for agent knowledge representation"
+repository = "https://github.com/ielm/omnigraph"
+readme = "README.md"
+keywords = ["graph", "knowledge-graph", "ontology", "agents"]
+categories = ["data-structures"]
+authors = ["Ivan Leon <i.leonmaldonado@gmail.com>"]
 
 [dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
